@@ -1,4 +1,4 @@
-# Software Configuration Management @mattcolo01
+# Software Configuration Management 
 Per la gestione della configurazione, quindi sia codice che documentazione, abbiamo utilizzato una repository GitHub condivisa con tutto il team.
 
 ## Organizzazione del repository
