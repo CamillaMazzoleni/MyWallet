@@ -1,4 +1,4 @@
-# Refactoring @mattcolo01
+# Refactoring 
 Il refactoring è il processo secondo cui viene rivisto il codice senza aggiungere o modificare funzionalità, ma migliorandone la qualità interna eliminando i "bad smells", ad esempio:
 - eliminando codice duplicato astraendolo in una funzione
 - evitando l'uso di variabili globali
