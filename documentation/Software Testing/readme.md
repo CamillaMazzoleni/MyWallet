@@ -1,4 +1,4 @@
-# Software Testing @andrearoota
+# Software Testing
 
 ## Libreria di test
 Per testare il corretto funzionamento del software sfruttiamo il supporto nativo a `PHPUNIT` fornitoci dal framework Laravel ([documentazione](https://laravel.com/docs/9.x/testing)) utilizzando principalmente i test denominati `Feature` che consentono di testare grandi porzioni di codice includendo delle richieste HTTP ai JSON endpoint.
