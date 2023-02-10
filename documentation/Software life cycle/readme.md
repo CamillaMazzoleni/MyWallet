@@ -1,4 +1,4 @@
-# Software Life Cycle @pierGit7
+# Software Life Cycle
 
 **Per il processo di sviluppo il team ha scelto un approccio di tipo Agile, per avere una risposta più rapida ai cambiameti e per non essere legati ad un  piano da seguire.**
 
