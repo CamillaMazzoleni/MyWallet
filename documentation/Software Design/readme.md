@@ -1,4 +1,4 @@
-# Software Design @andrearoota
+# Software Design
 
 Il progetto funziona su uno stack composto da [Apache](https://httpd.apache.org/) - [Laravel](https://laravel.com/) - [PostgreSQL](https://www.postgresql.org/) - [React](https://reactjs.org/) secondo il paradigma [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller).
 
