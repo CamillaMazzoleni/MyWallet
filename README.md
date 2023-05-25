@@ -5,6 +5,7 @@ University Software engineering project of a Trading Platform
 ## Table of Contents
 - [Introduction](#introduction)
 - [Project Overview](#project-overview)
+- [Project Plan](#project-plan)
 - [Team Organization](#team-organization)
 - [Software Life Cycle](#software-life-cycle)
 - [Software Quality](#software-quality)
@@ -23,6 +24,7 @@ The main goal of the Stock Trading Platform is to provide users with a reliable 
 - Wallet management for tracking user funds
 - Admin dashboard for managing users and stocks
 
+## Project Plan
 
 ## Team Organization
 The project team embraced a collaborative and flexible approach. While there is clear task division, strong specialization is avoided. If a problem arises, the team works together to resolve it, regardless of whether it's related to the backend or frontend. The Scrum Master role rotates for each sprint, and the Scrum Master acts as a coach, supporting and motivating the team. Pair programming is utilized, allowing developers to work in pairs, with one writing code while the other serves as a supervisor and reviewer. The roles can be switched between the developers. [View Documentation](documentation/Software%20life%20cycle/readme.md)
