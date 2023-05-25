@@ -1,12 +1,13 @@
 # Software Testing
 
-## Libreria di test
-Per testare il corretto funzionamento del software sfruttiamo il supporto nativo a `PHPUNIT` fornitoci dal framework Laravel ([documentazione](https://laravel.com/docs/9.x/testing)) utilizzando principalmente i test denominati `Feature` che consentono di testare grandi porzioni di codice includendo delle richieste HTTP ai JSON endpoint.
+## Testing Library
+To test the proper functioning of the software, we utilize the native support for `PHPUnit` provided by the Laravel framework ([documentation](https://laravel.com/docs/9.x/testing)), mainly using the `Feature` tests that allow testing large portions of code by making HTTP requests to JSON endpoints.
 
-I test sono scritti all’interno della directory: `backend/tests/`.
+The tests are written within the `backend/tests/` directory.
 
-## Generazione dati test
-Un'altra funzionalità fornita dal framework è quella di generare oggetti o interi database di test utilizzando la libreria [Faker](https://fakerphp.github.io/).
+## Test Data Generation
+Another functionality provided by the framework is the ability to generate objects or entire test databases using the [Faker](https://fakerphp.github.io/) library.
+
 
 ```php
 /**
@@ -33,25 +34,30 @@ public function definition()
     ];
 }
 ```
-Le definizioni dei dati da generare sono scritte all’interno della directory: `backend/database/`.
+The data definitions for generation are written within the backend/database/ directory.
 
-## Elenco test
+## List of Tests
 ### 01. AuthTest
-Si occupa di testare l'intero servizio di autenticazione, è composto da tre sotto test:
+Tests the entire authentication service and consists of three sub-tests:
+
 - test_registration
 - test_login
 - test_logout
 
 ### 02. UserApiTest
-Si occupa di testare le API esposte utilizzabili dagli utenti autenticati di livello **base**, è composto da due sotto test:
+Tests the exposed APIs that can be used by base level authenticated users and consists of two sub-tests:
+
 - test_get_stocks
 - test_increase_or_decrease_wallet
 
+
 ### 03. AdminApiTest
-Si occupa di testare le API esposte utilizzabili dagli utenti autenticati di livello **admin**, è composto da tre sotto test:
+Tests the exposed APIs that can be used by admin level authenticated users and consists of three sub-tests:
+
 - test_get_users
 - test_get_stocks
 - test_approved_by_administrator
+
 
 ## Coverage
 Di seguito il report generato da PHPUnit.
