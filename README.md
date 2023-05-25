@@ -1,47 +1,29 @@
 # MyWallet
 
-University Software engineering project of a Trading Platform
+Welcome to MyWallet! This is a project that helps you manage your finances efficiently.
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Project Overview](#project-overview)
-- [Project Plan](#project-plan)
-- [Team Organization](#team-organization)
-- [Software Life Cycle](#software-life-cycle)
-- [Software Quality](#software-quality)
-- [Software Testing](#software-testing)
+## Documentation
 
+- [Project Plan](./documentation/ProjectPlan.md) ![Project Plan](./documentation/asset/moscow.jpg)
+- [API Documentation - Admin](./documentation/api/Admin.md) ![Admin API](./documentation/asset/admin_icon.png)
+- [API Documentation - Authentication](./documentation/api/Auth.md) ![Authentication API](./documentation/asset/auth_icon.png)
+- [API Documentation - Users](./documentation/api/Users.md) ![Users API](./documentation/asset/users_icon.png)
+- [Maintenance](./documentation/Maintenance/readme.md) ![Maintenance](./documentation/asset/maintenance_icon.png)
+- [Refactoring](./documentation/Refactoring/readme.md) ![Refactoring](./documentation/asset/refactoring_icon.png)
+- [Requirements Engineering](./documentation/Requirements%20Engineering/readme.md) ![Requirements Engineering](./documentation/asset/requirements_engineering_icon.png)
+- [Software Architecture](./documentation/Software%20Architecture/readme.md) ![Software Architecture](./documentation/asset/software_architecture_icon.png)
+- [Software Configuration Management](./documentation/Software%20Configuration%20Management/readme.md) ![Software Configuration Management](./documentation/asset/software_config_icon.png)
+- [Software Design](./documentation/Software%20Design/readme.md) ![Software Design](./documentation/asset/software_design_icon.png)
+- [Software Life Cycle](./documentation/Software%20life%20cycle/readme.md) ![Software Life Cycle](./documentation/asset/software_lifecycle_icon.png)
+- [Software Quality](./documentation/Software%20Quality/readme.md) ![Software Quality](./documentation/asset/software_quality_icon.png)
+- [Software Testing](./documentation/Software%20Testing/readme.md) ![Software Testing](./documentation/asset/software_testing_icon.png)
+- [Sprint Documentation](./documentation/Sprint/)
+- [UML Diagrams](./documentation/UML%20diagrams/PDF/)
 
-## Introduction
-The is a web-based application that allows users to buy and sell stocks online. It provides real-time stock information, user authentication, and a user-friendly interface for managing stock transactions.
+## Project Structure
 
-
-## Project Overview
-The main goal of the Stock Trading Platform is to provide users with a reliable and efficient platform for trading stocks. Key features include:
-- Stock data and prices
-- User registration and authentication
-- Stock buying and selling functionality
-- Wallet management for tracking user funds
-- Admin dashboard for managing users and stocks
-
-## Project Plan
-
-## Team Organization
-The project team embraced a collaborative and flexible approach. While there is clear task division, strong specialization is avoided. If a problem arises, the team works together to resolve it, regardless of whether it's related to the backend or frontend. The Scrum Master role rotates for each sprint, and the Scrum Master acts as a coach, supporting and motivating the team. Pair programming is utilized, allowing developers to work in pairs, with one writing code while the other serves as a supervisor and reviewer. The roles can be switched between the developers. [View Documentation](documentation/Software%20life%20cycle/readme.md)
-
-## Software Life Cycle
-For the software development process, the team chose an Agile approach to achieve faster responses to changes and avoid strict adherence to a predefined plan. We followed the SCRUM life cycle, starting with defining all project requirements and creating a product backlog. For each sprint, a subset of the backlog items was selected in order of priority and included in the sprint backlog. The team focused on implementing and testing these items. Daily Scrum meetings and Sprint meetings were held as needed. At the end of each sprint (approximately four weeks), the team conducted an sprint review. [View Documentation](documentation/Software%20life%20cycle/readme.md)
-
-## Software Quality
-The development team has focused on meeting the following quality requirements:
-- **Reliability**: The software has undergone extensive testing to ensure its reliability.
-- **Efficiency**: The software meets efficiency requirements outlined in the specifications to provide accurate stock suggestions and ensure a smooth user experience.
-- **Integrity**: The software is secure, requiring authentication with username, password, and email validation for profile-to-bank account association.
-- **Usability**: The team has aimed to create a simple and intuitive graphical interface to facilitate easy usage of the application.
-- **Correctness**: The team has committed to meeting requirements and developing correct software.  [View Documentation](documentation/Software%20Quality/readme.md)
-
-## Software Testing
-To ensure the correct functioning of the software, we utilize the native support for `PHPUNIT` provided by the Laravel framework. We primarily use the `Feature` tests, which allow us to test large code portions, including HTTP requests to JSON endpoints. The tests are written in the `backend/tests/` directory. We also generate test data using the Faker library. Data definitions for generation are written in the `backend/database/` directory. A coverage report generated by PHPUnit is included in the project documentation. [View Documentation](documentation/Software%20Testing/readme.md)
-
+- [Backend](./backend/README.md)
+- [Frontend](./frontend/README.md)
+- [Documentation](./documentation/README.md)
 
 
