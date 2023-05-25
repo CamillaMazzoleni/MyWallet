@@ -1,11 +1,11 @@
 # Project Plan
 
 ## 1. Introduction
-The purpose of the project is to create an algorithmic trading platform for the automated management of private investment portfolios.
+The purpose of the project is to create an algorithmic trading platform for the automated management of private investment wallets.
 
 During the registration phase, the user creates a profile, specifying their investment risk level (low, medium, or high). When the user deposits money, the trading software comes into play: the algorithm constantly monitors the market and sends a notification to the user whenever it finds a profitable investment or sale. The user can authorize or deny the transaction with a simple click.
 
-The user can monitor the performance of their portfolio through a simple and intuitive graphical interface. They can also choose to change their risk profile, upgrade to a premium version for additional guarantees, or sell everything and withdraw funds.
+The user can monitor the performance of their wallet through a simple and intuitive graphical interface. They can also choose to change their risk profile, upgrade to a premium version for additional guarantees, or sell everything and withdraw funds.
 
 The trading software has two main functionalities: prediction and risk analysis. For prediction, we will implement historical data analysis. By using regression models, moving averages (MA), and ARMA, we can determine the trend and decide when to buy and sell. Risk analysis is necessary to determine the risk level of the investment. For simplicity, the software categorizes investments into three risk categories (low, medium, high) to choose the most suitable investment based on the user's profile.
 
