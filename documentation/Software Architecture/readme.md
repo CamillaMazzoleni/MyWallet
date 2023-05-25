@@ -1,33 +1,33 @@
-# Software architecture
+# Software Architecture
 
-Il software da noi progettato è basato su un'architettura client-server che utilizza lo stile architetturale [MVC](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller):
-- **controller e model**, vengono gestiti dal backend che si occupa di astrarre e manipolare i dati presenti nel database e di gestire le richieste HTTP autenticate e non, il tutto funziona grazie ad uno stack composto da [Apache](https://httpd.apache.org/) - [Laravel](https://laravel.com/) - [PostgreSQL](https://www.postgresql.org/).
-- **view**, gestita dalla parte di frontend attraverso l'uso del framework js [React](https://reactjs.org/).
+The software we designed is based on a client-server architecture that uses the Model-View-Controller (MVC) architectural style:
+- **Controller and Model** are managed by the backend, which abstracts and manipulates the data in the database and handles authenticated and non-authenticated HTTP requests. This functionality is achieved using a stack composed of [Apache](https://httpd.apache.org/) - [Laravel](https://laravel.com/) - [PostgreSQL](https://www.postgresql.org/).
+- **View** is handled by the frontend using the React JavaScript framework.
 
-L'idea era quella di creare un'architettura a servizi per gestire le varie richieste (autenticazione, calcoli statistici, dati utente, dati stocks, ecc.), ma attualmente risulta maggiormente monolitico in quanto gestito interamente da uno stesso server per questioni di semplicità; il progetto è comunque sviluppato con l'idea di una suddivisione futura in microservizi e tutto ciò rende basso l'accoppiamento tra i vari moduli.
+The idea was to create a service-oriented architecture to handle various requests (authentication, statistical calculations, user data, stock data, etc.). However, currently, it is more monolithic as it is entirely managed by a single server for simplicity. Nevertheless, the project is developed with the idea of future microservice division, resulting in low coupling between modules.
 
-## Vista statica
-Punto di vista del client-server e decomposizione
+## Static View
+Client-server viewpoint and decomposition
 
 ![img](./asset/client-server-diagram.png)
 
 ## Deployment Viewpoint
 ![img](./asset/Deploy-diagram.png)
 
-
-## Sicurezza
-Il client, per accedere agli endpoint protetti, deve essere in possesso di un [JSON Web Tokens](https://jwt.io/) fornitogli in fase di autenticazione, esso garantisce che l'utente è chi dice di essere e che abbia i permessi necessari, per maggiori informazioni rimandiamo al documento [RFC 7519](https://tools.ietf.org/html/rfc7519).
+## Security
+To access protected endpoints, the client must possess a [JSON Web Token (JWT)](https://jwt.io/) provided during authentication. It guarantees that the user is who they claim to be and has the necessary permissions. For more information, refer to the [RFC 7519](https://tools.ietf.org/html/rfc7519) document.
 
 ![img](./asset/JWT_diagram.png)
 
-Il token viene utilizzato sia lato client che lato server; lato user viene sfruttato per determinare se l'utente ha l'accesso a determinate pagine e/o risorse, mentre lato server viene utilizzato per accettare o rifiutare richieste autenticate e se l'utente ha i permessi di visualizzazione e/o modifica di una certa risorsa.
+The token is used both on the client-side and server-side. On the client-side, it is used to determine whether the user has access to certain pages and/or resources. On the server-side, it is used to accept or reject authenticated requests and check if the user has permissions to view and/or modify certain resources.
 
 ## Docker
-Per un più semplice sviluppo e futuro deploy del software si è deciso di utilizzare i container attraverso il tool [Docker](https://www.docker.com/).
+To facilitate software development and future deployment, we decided to use containers through the Docker tool.
 
-Le specifiche di ogni container sono descritte nel file [docker-compose.yml](../../backend/docker-compose.yml), di seguito forniamo una breve descrizione dei più importanti:
-- `sail-8.1/app`, contiene il framework Laravel e PHP 8.1.
-- `postgres:15.1-alpine`, contiene PostgreSQL.
-- `frontend`, contiene il framework React.
+The specifications for each container are described in the [docker-compose.yml](../../backend/docker-compose.yml) file. Here's a brief description of the most important ones:
+- `sail-8.1/app` contains the Laravel framework and PHP 8.1.
+- `postgres:15.1-alpine` contains PostgreSQL.
+- `frontend` contains the React framework.
 
-Questa scelta progettuale permette un rilascio semplificato del software, ad esempio su [Amazon Elastic Container Service](https://aws.amazon.com/it/ecs/) o [Azure Container Instances](https://azure.microsoft.com/it-it/products/container-instances) senza dover gestire il server e mantenendo un grado elevato di scalabilità.
+This design choice allows for simplified software releases, such as on [Amazon Elastic Container Service](https://aws.amazon.com/ecs/) or [Azure Container Instances](https://azure.microsoft.com/products/container-instances), without the need to manage the server while maintaining a high degree of scalability.
+
