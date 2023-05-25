@@ -26,9 +26,8 @@ The software constantly monitors the market and automatically makes every analys
 - [Refactoring](./documentation/Refactoring/readme.md) 
 
 - [UML Diagrams](./documentation/UML%20diagrams/PDF/)
-- [API Documentation - Admin](./documentation/api/Admin.md) 
-- [API Documentation - Authentication](./documentation/api/Auth.md)
-- [API Documentation - Users](./documentation/api/Users.md) 
+- [API Documentation](./documentation/api/) 
+
 
 
 ## Project Structure
