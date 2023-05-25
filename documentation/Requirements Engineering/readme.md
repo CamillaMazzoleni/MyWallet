@@ -1,77 +1,77 @@
-# Requirement engineering
-L' ingegneria dei requisiti è una fase importante di un progetto software.
-L' obbiettivo che ci siamo posti è stato quello di ottenere una descrizione completa del problema da risolvere. Il riultato di questa fase è la specifica dei requisiti, in cui sono descritti i requisiti principali della piattaforma, ordinati in base alla priorità.
+# Requirement Engineering
+
+Requirement engineering is an important phase of a software project. Our goal was to obtain a complete description of the problem to be solved. The outcome of this phase is the specification of requirements, which describes the main requirements of the platform, ordered by priority.
 
 ![Alt text](./asset/requirements%20engineering.png)
 
+## Requirements Specification
 
-# Specifica dei requisiti
-## 1. Introduzione
-### Propositi
-Il proposito di questo documento è quello di specificare i requisiti del sistema software per facilitarne la realizzazione. A tal proposito rispettiamo le line guida IEEE830
-### Obbiettivi
-Si vuole realizzare una piattaforma per il trading algoritmico. L' utente può caricare dei fondi da investire. Il sistema invia notifiche all' utente se investire o vendere, in base all' andamento del mercato. Con un semplice click l' utente può approvare le transazioni suggerite dalla piattaforma. L' obbiettivo del progetto è quindi la gestione automatica dei portafogli dell' utente, in particolare delle notifiche di vendita/ acquisto di azioni in base ai trend.
-### Definizioni, acronimi ed abbreviazioni 
-STOCK= valore dell' azione
-STOCK_NAME= nome dell' azienda
-STOCK_CLOSE= valore dell' azione alla chiusura del mercato.
+### 1. Introduction
 
-## 2. Descrizione generale
-### Funzionalità del prodotto
+#### Purposes
+The purpose of this document is to specify the requirements of the software system to facilitate its realization. In this regard, we adhere to the IEEE830 guidelines.
 
-- Registrazione e creazione del profilo
+#### Objectives
+The objective is to create a platform for algorithmic trading. Users can load funds for investment. The system sends notifications to the users about when to invest or sell based on market trends. With a simple click, users can approve the suggested transactions by the platform. The project's goal is the automatic management of user portfolios, specifically the notifications for buying/selling stocks based on trends.
 
+#### Definitions, Acronyms, and Abbreviations
+- STOCK: Stock value
+- STOCK_NAME: Company name
+- STOCK_CLOSE: Stock value at market closing.
+
+### 2. General Description
+
+#### Product Functionality
+- Registration and profile creation
 - Login/logout
+- Adding funds
+- Withdrawing funds
+- Profile update
+- Authorization for buying/selling
+- Investment and portfolio analysis
 
-- Aggiunta di fondi
+#### User Characteristics
+The software system is aimed at users with a fair knowledge of the field of information technology, although no knowledge of finance and trading is required. However, users are expected to be aware of personal finance and money management.
 
-- Prelevamento dei fondi
+#### General Constraints
 
-- Update del profilo
+### 3. Specific Requirements
 
-- Autorizzazione per compravendita
+#### User Interface
+The software system should have an intuitive, simple, and clear interface.
 
-- Analisi investimento e portafoglio
+#### Hardware Interface
+The system should not interface with any hardware systems.
 
-### Caratteristiche utente
-Il sistema software è risvolto ad una utenza con discreta conoscenza nell' ambito informatico, anche se non è richiesta alcuna conoscenza in ambito finanziario e di trading: si presuppone però un' utenza che sia consapevole riguardo a finanza personale e gestione dei soldi.
+### Functional Requirements
 
-### Vincoli gernerali
+In this regard, we divide the requirements based on priority using two schemes:
 
-## 3. Requisiti specifici
-### Interfaccia utente
-Il sistema software deve essere dotato di un' interfaccia intuitiva, semplice e chiara.
-### Interfaccia hardware
-Il sistema non deve interfacciarsi con nessun sistema hardware
-
-## Requisiti funzionali
-A tal proposito dividiamo i requisiti in base alla priorità, sulla base di due schemi
 - MOSCOW Model
 ![Alt text](./asset/moscow.jpg)
 
-
-
 - Kano Model
-    - Deve essere: 
-        - registrazione utente
-        - deve permettere la gesione del portafoglio
-        - deve permettere la gestione dell' account
-        - deve inviare notifiche riguardo le compravendite
-    - Attraente:
-        - possibilità di vedere statistiche su investimenti e mercato
-    - Unidimensionale:
-        - interfaccia grafica intuitiva e semplice
+  - Must-Have:
+    - User registration
+    - Portfolio management capability
+    - Account management capability
+    - Send notifications regarding buying/selling
+  - Attractive:
+    - Ability to view investment and market statistics
+  - One-Dimensional:
+    - Intuitive and simple graphical interface
 
-## Requisiti non funzionali
+### Non-Functional Requirements
+
 - MOSCOW Model
-    - Must have
-        - password sicura
-        - invio email di conferma per l' associazione con conto corrente
-        - almeno 5 notifiche di compravendita al giorno
-    - Should have
-        - tempi di risposta inferiore al secondo per il login nella pagina
-    - Won't have
-        - generazione di codice OTP per l' associazione con il conto corrente
+  - Must-Have:
+    - Secure password
+    - Confirmation email for association with a bank account
+    - At least 5 buying/selling notifications per day
+  - Should-Have:
+    - Response time of less than one second for logging into the page
+  - Won't-Have:
+    - OTP code generation for association with a bank account
 
 
 
