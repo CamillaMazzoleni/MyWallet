@@ -1,20 +1,22 @@
-# Software Configuration Management 
-Per la gestione della configurazione, quindi sia codice che documentazione, abbiamo utilizzato una repository GitHub condivisa con tutto il team.
+# Software Configuration Management
 
-## Organizzazione del repository
-All'interno del repository troviamo direttamente nella radice i file essenziali (licenza, readme, script per installazione) e 3 directory principali:
-- `frontend`: contiene il codice del mero sito web lato client
-- `backend`: contiene il codice del programma lato server invocato dal sito web
-- `documentation`: tutta la documentazione prodotta va qui
+For configuration management, including code and documentation, we used a shared GitHub repository with the entire team.
 
-## Gestione delle modifiche
-La baseline del progetto si trova nel branch "main". Si possono apportare modifiche solo in branch diversi dal main: ogni membro del team ne ha uno su cui lavora e che tiene costantemente aggiornato dal main, ma possono esserne creati altri ad hoc per problemi specifici, ad esempio partendo da un issue.
-Le modifiche presenti su branch secondari possono essere trasferite nel main solo mediante la seguente procedura:
-1. Chi sta lavorando sul branch crea una pull request, richiedendo una review
-2. Il reviewer, prestabilito, può approvare il lavoro svolto o richiedere delle modifiche
-3. Se la pull request è stata approvata viene effettuato il merge del branch nel main, altrimenti si apportano le modifiche richieste e si riparte dal punto 1
+## Repository Organization
+Within the repository, directly in the root, you will find the essential files (license, readme, installation scripts) and 3 main directories:
+- `frontend`: contains the client-side website code
+- `backend`: contains the server-side program code invoked by the website
+- `documentation`: all the produced documentation goes here
 
-## Assegnazione dei compiti
-Un membro del team può trovare i suoi compiti nella sezione `Projects` di GitHub. All'avvio del progetto è stata stilata la lista delle funzionalità da implementare, che può essere aggiornata anche in seguito. Questa lista si trova sotto la voce "Product Backlog". All'inizio di ogni sprint si scelgono le funzionalità che verranno implementate e si spostano sotto la voce "Sprint Backlog". Se queste funzionalità sono grandi e quindi assegnate a più di una persona, è facoltà delle persone assegnate aprire delle issue per suddividersi le sotto-funzionalità. Alla fine di ogni sprint le funzionalità completamente implementate vengono spostate sotto la voce "Done".
+## Change Management
+The project's baseline is located in the "main" branch. Changes can only be made in branches other than the main branch. Each team member has their own branch to work on, which they keep constantly updated from the main branch. However, additional branches can be created for specific issues, for example, starting from an issue.
+Changes made in secondary branches can be transferred to the main branch only through the following procedure:
+1. The person working on the branch creates a pull request, requesting a review.
+2. The designated reviewer can approve the work done or request changes.
+3. If the pull request is approved, the branch is merged into the main branch. Otherwise, the requested changes are made, and the process starts again from step 1.
 
-Per bugs, problemi di altro genere e checklists si aprono issues apposite assegnando il membro designato.
+## Task Assignment
+Team members can find their assigned tasks in the "Projects" section of GitHub. At the start of the project, a list of features to be implemented was created, which can be updated later on. This list is located under the "Product Backlog" section. At the beginning of each sprint, the features to be implemented are selected and moved to the "Sprint Backlog" section. If these features are significant and assigned to more than one person, the assigned individuals can open issues to divide the sub-features among themselves. At the end of each sprint, the fully implemented features are moved to the "Done" section.
+
+For bugs, other issues, and checklists, dedicated issues are opened and assigned to the designated member.
+
