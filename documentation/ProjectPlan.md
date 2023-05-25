@@ -1,101 +1,83 @@
 # Project Plan
-## 1. Introduzione @camillamazzoleni
-Lo scopo del progetto è creare una piattaforma di trading algoritmico per la gestione automatizzata di portafogli di investimento di privati.
 
-L'utente, nella fase di registrazione crea un profilo, in cui specifica la fascia di rischio di investimento (basso, medio o alto). Quando l'utente carica dei soldi, il software di trading entra in gioco: l'algoritmo monitora costantemente il mercato e invia una notifica all'utente ogni volta che trova un investimento o una vendita vantaggiosa: l'utente con un semplice click può autorizzare o negare la transazione.
+## 1. Introduction
+The purpose of the project is to create an algorithmic trading platform for the automated management of private investment portfolios.
 
-L'utente può monitorare l'andamento del suo portafoglio grazie ad un'interfaccia grafica semplice e intuitiva; può anche decidere di cambiare profilo di rischio, fare l'upgrade a una versione premium che da accesso a maggiori garanzie, oppure vendere tutto e prelevare i fondi.
+During the registration phase, the user creates a profile, specifying their investment risk level (low, medium, or high). When the user deposits money, the trading software comes into play: the algorithm constantly monitors the market and sends a notification to the user whenever it finds a profitable investment or sale. The user can authorize or deny the transaction with a simple click.
 
-Il software di trading ha quindi due funzionalità principali: una di previsione e una di analisi del rischio. Per la previsione implementeremo un'analisi di serie storiche. Utilizzando modelli regressivi, moving average (MA) ed ARMA sarà possibile determinare il trend, e quindi determinare quando conviene comprare e quando vendere. L'analisi di rischio è necessaria per determinare in quale fascia di rischio rientrerebbe l'investimento. In questo modo, per semplicità, il software categorizza gli investimenti in 3 categorie (basso rischio, medio rischio, alto rischio) in modo da scegliere l'investimento più adatto all'utente, in base al suo profilo.
+The user can monitor the performance of their portfolio through a simple and intuitive graphical interface. They can also choose to change their risk profile, upgrade to a premium version for additional guarantees, or sell everything and withdraw funds.
 
-## 2. Modello di processo @andrearoota
-Il modello di processo agile selezionato per sviluppare il progetto è il framework SCRUM.
-Lo sprint dura 7 giorni e lo Scrum Master viene ricoperto da ciascun membro del team a rotazione per permetterci di apprendere il ruolo.
-La compilazione del Product Backlog, dello Sprint Backlog e delle fasi successive viene gestita attraverso lo strumento Projects di GitHub.
+The trading software has two main functionalities: prediction and risk analysis. For prediction, we will implement historical data analysis. By using regression models, moving averages (MA), and ARMA, we can determine the trend and decide when to buy and sell. Risk analysis is necessary to determine the risk level of the investment. For simplicity, the software categorizes investments into three risk categories (low, medium, high) to choose the most suitable investment based on the user's profile.
 
-## 3. Organizzazione dl progetto @mattcolo01
-Il team è composto da quattro persone:
-1. Colombo Matteo
-2. Mazzoleni Camilla
-3. Rota Andrea
-4. Sorgiovanni Pier Francesco
+## 2. Process Model
+The selected agile process model for developing the project is the SCRUM framework. Each sprint lasts 7 days, and the Scrum Master role is rotated among team members to allow everyone to learn the role. The Product Backlog, Sprint Backlog, and subsequent phases are managed using the Projects tool in GitHub.
 
-Il team è suddiviso tra chi si occupa di frontend (Colombo, Mazzoleni) e chi di backend (Rota, Sorgiovanni). Per ogni sotto-team è presente un reviewer (Colombo, Rota) che revisiona il codice della sua area di progetto.
-Il gruppo si incontra ogni sabato mattina in aula B-103 dell'Università degli Studi di Bergamo, mentre ogni sotto team si aggiorna quotidinamente attraverso video-call. Ogni giorno ci sarà un breve Daily Scrum.
-GitHub è lo strumento prescelto sia per la condivisione del codice, la gestione delle versioni e le richieste di modifica, sia per la gestione della documentazione.
+## 3. Project Organization
+The team consists of four people:
+1. Matteo Colombo
+2. Camilla Mazzoleni
+3. Andrea Rota
+4. Pier Francesco Sorgiovanni
 
-## 4. Standard, linee guida, procedure @andrearoota
-Il software verrà implementato con un'architettura client-server:
-1. Client, sviluppato con il framework [React](https://reactjs.org/);
-2. Server, sviluppato con lo stack [Apache](https://httpd.apache.org/) - [Laravel](https://laravel.com/) - [PostgreSQL](https://www.postgresql.org/).
+The team is divided into frontend (Colombo, Mazzoleni) and backend (Rota, Sorgiovanni) roles. Each sub-team has a reviewer (Colombo, Rota) who reviews the code in their respective area. The team meets every Saturday morning at B-103 in the University of Bergamo, while each sub-team updates daily through video calls. Daily scrum meetings are held every day. GitHub is the chosen tool for code sharing, version control, change requests, and documentation management.
 
+## 4. Standards, Guidelines, Procedures
+The software will be implemented using a client-server architecture:
+1. Client: developed with the [React](https://reactjs.org/) framework.
+2. Server: developed with the [Apache](https://httpd.apache.org/) - [Laravel](https://laravel.com/) - [PostgreSQL](https://www.postgresql.org/) stack.
 
-## 5. Attività di gestione @camillamazzoleni
-Le attività di gestione sono necessarie per gestire e controllare tutti gli artifatti prodotti nel corso dello sviluppo del progetto.
-Per quanto riguarda le attività di gestione ordinaria:
-- Ogni giorno verrà effettuato un Daily Scrum, in modo che ogni componente del gruppo sia informato sul progresso.
-- Alla fine di ogni Sprint avrà luogo uno Sprint review, per la verifica e la validazione di questo.  
-Questi report constanti permetteranno un controllo continuativo dello sviluppo del progetto.
-Per quanto riguarda la gestione degli elementi di configurazione, ogni richiesta di modifica deve essere autorizzata dal project manager
+## 5. Management Activities
+Management activities are necessary to manage and control all artifacts produced during the project development. For regular management activities:
+- A daily Scrum meeting will be conducted to keep every team member informed about the progress.
+- At the end of each sprint, a sprint review will take place for verification and validation. These continuous reports will allow continuous control of the project's development. For configuration management, every change request must be authorized by the project manager.
 
+## 6. Risks
+The major risks include:
+- Failing to meet the final project deadline due to university and work commitments of team members.
+- Failing to develop a sophisticated enough algorithm that cannot be used.
+- Possible challenges in obtaining datasets for stock exchange performance.
+- Possible challenges in obtaining authorization from banks for transactions.
 
-## 6. Rischi @camillamazzoleni
-I rischi maggiori sono:
-- mancare la consegna finale del progetto causa impegni universitari e lavorativi di ciascun membro del team.
-- non riuscire a sviluppare un algoritmo abbastanza sofisticato che quindi non può essere utilizzato.
-- possibili problemi per ottenere datasets sull'andamento dello stock exchange.
-- possibili problemi per ottenere autorizzazione dalle banche per le transazioni.
+## 7. Personnel
+The team consists of four people:
+1. Matteo Colombo (frontend, reviewer, tester)
+2. Camilla Mazzoleni (product owner, frontend, statistical models developer)
+3. Andrea Rota (backend, reviewer, database designer)
+4. Pier Francesco Sorgiovanni (project manager, backend, statistical models developer)
 
-## 7. Personale @camillamazzoleni
-Il team è composto da quattro persone:
-1. Colombo Matteo (frontend, reviewer, tester)
-2. Mazzoleni Camilla (product owner, frontend, statistical models developer)
-3. Rota Andrea (backend, reviewer, progettista database)
-4. Sorgiovanni Pier Francesco (project manager, backend, statistical models developer)
+The Scrum Master role will be rotated to involve and educate all team members.
 
-Lo Scrum Master verrà fatto a rotazione per coinvolgere e far apprendere il ruolo a tutti i membri del team.
+## 8. Methods and Techniques
+To model the program and have a broader view of the project's functionalities, we will use various types of diagrams using UML. To identify use cases, the project manager and the product owner need to meet to define the required specifications to be included in the product backlog. Once the use cases and actors are identified, we will create a USE CASE DIAGRAM. The modeling of classes and their communication will be implemented using the UML CLASS DIAGRAM, which helps identify attributes and methods to be included in the classes. Additionally, we can view each operation as a set of messages exchanged between classes. To do this, we will use the SEQUENCE DIAGRAM, which provides a sequential modeling to give an execution order to each operation. To model the data to be stored in our database, we will use an ER CLASS DIAGRAM to define the various tables to be stored and the relationships (with different cardinalities).
 
-## 8. Metodi e tecniche @pierGit7
-Per modellare il programma e avere una visione più ampia sulle funzionalità del progetto useremo diversi tipi di diagrammi grazie ad UML.
-Per identificare i casi d'uso il project-manager e il product owner dovranno incontrarsi, per definire le specifiche richieste da inserire anche nel product backlog. Una volta identificati i casi d'uso e gli attori inseriremo tutto nello USE CASE DIAGRAM.
- La modellazione delle classi
-e la comunicazione tra di esse verrà implementata grazie al UML CLASS DIAGRAM, questo diagramma 
-ci permetterà di identificare attributi e metodi da inserire nelle classi.
-Inoltre possiamo vedere ogni operazione come un insieme di messaggi che vengono scambiati tra classi. Per fare ciò useremo il SEQUENCE DIAGRAM che fornendoci una modellazione sequenziale riuscirà a dare un ordine di esecuzione ad ogni operazione.
-Per modellare i dati da salvare nel nostro db, utilizzeremo un ER CLASS DIAGRAM dove 
-definiremo le varie tabelle da memorizzare e le relazioni (con le diverse cardinalità).
+## 9. Quality Assurance
+In the design of our application, we will follow the guidelines indicated in the ISO 9001 standard, with particular attention to Section 5 - Leadership and Section 6 - Planning. Regarding the coding aspect, we will also adopt the MCCall model and ensure the security of our software in critical phases such as login and transactions.
 
-## 9. Garanzia di qualità @mattcolo01
-Nella progettazione del nostro applicativo seguiremo le linee guida indicate nella norma ISO 9001, con una particolare attenzione alla Sezione 5 - Leadership e alla Sezione 6 - Pianificazione. Per quanto riguarda il lato più specificatamente di coding adotteremo anche il modello di MCCall e renderemo sicuro il nostro software nelle fasi critiche, come il login e le transazioni.
+## 10. Work Packages
+The project is divided into several macro components:
+1. PostgreSQL relational database
+2. Backend developed with the Laravel framework (PHP)
+3. Frontend developed with the React framework (JS)
+4. Statistical prediction models developed in the R language
 
-## 10. Pacchetti di lavoro @andrearoota
-Il progetto viene suddiviso in diversi macro componenti:
-1. Database relazione in PostgreSQL 
-2. Backend sviluppato con il framework Laravel (PHP)
-3. Frontend sviluppato con il framework React (JS)
-4. Modelli statistici di previsione sviluppato in linguaggio R
+Each team member actively participates in the development of various components.
 
-Ogni membro del team partecipa attivamente allo sviluppo dei vari componenti.
+## 11. Resources
+For the realization of this project, we have utilized various resources:
+- The team, consisting of 4 developers, including a project manager and a rotating Scrum Master.
+- Devices: each developer will have access to PCs and tablets.
+- Applications and websites of various kinds, such as communication apps, GitHub for project sharing and change management, IDEs for code writing, and UML tools for diagrams.
+- Work environment: the team will meet in room B-103.
 
-## 11. Risorse @pierGit7
-Per la realizzazione di questo progetto abbiamo usufruito di diverse risorse:
--Il team , formato da 4 sviluppatori, nei quali è compreso un projetct-manager  ed uno scrum master che cambierà ogni settimana
--dispositivi, ogni sviluppatore avrà a disposizione pc e tablet
--applicazioni e siti  di diverso genere, come app per la comunicazione , GitHub per condividere il progetto e gestire le modifiche, IDE per la stesura del codice e UML per i diagrammi 
--ambienti di lavoro, il team si riuonirà in aula b-103 
+## 12. Budget
+As a university project, the most important resource is time. We estimate that each team member will work for 50 hours, for a total of 200 hours. These hours will be roughly allocated as follows:
+- 150 hours for design
+- 50 hours for development
+The compensation will not be monetary but a good grade, so the team allocates a budget of €100, which will be used for fuel and coffee.
 
-## 12. Budget @mattcolo01
-Essendo un progetto universitario la risorsa più importante è il tempo: stimiamo che ogni membro lavorerà 50h, per un totale di 200h. Queste verranno impiegate a grandi linee nel seguente modo:
-- 150 ore di progettazione
-- 50 ore di sviluppo
-Il compenso non sarà monetario bensì un bel voto, per cui il team mette a disposizione un budget di 100€ che sarà impiegato per benzina e caffè.
+## 13. Changes
+Each change will be carefully discussed with every team member. As an agile team, we will have strong communication through messaging apps, and we will also utilize daily or weekly scrum meetings since we meet every week. The final decision rests with the project manager, who will accept issues on GitHub.
 
-## 13. Cambiamenti @pierGit7
-Ogni cambiamento sarà attentamente discusso con ogni membro. Essendo una 
-squadra agile avremo una forte comunicazione grazie alle comuni app di 
-messagistica, ed usfruiremo anche del "daily scrum" o "weekly scrum" dato
-che ci riuniremo ogni settimana. Il passo finale spetta al project-manager 
-che dovrà accettare le issues su GitHub.
+## 14. Delivery
+The final delivery will take place by December 31, 2022, with possible maintenance until January 5, 2023.
 
-## 14. Consegna @andrearoota
-La consegna finale avverrà entro il 31/12/2022, con possibile manutenzione fino al 05/01/2023.
