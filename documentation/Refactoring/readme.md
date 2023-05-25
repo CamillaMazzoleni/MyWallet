@@ -1,11 +1,11 @@
 # Refactoring 
-Il refactoring è il processo secondo cui viene rivisto il codice senza aggiungere o modificare funzionalità, ma migliorandone la qualità interna eliminando i "bad smells", ad esempio:
-- eliminando codice duplicato astraendolo in una funzione
-- evitando l'uso di variabili globali
-- evitando metodi troppo lunghi.
+Refactoring is the process by which code is reviewed without adding or modifying functionality, but rather improving its internal quality by eliminating "bad smells," such as:
 
-Questo procedimento si rende necessario perché, come afferma il manifesto dell'Extreme Programming, più si apportano modifiche al codice più questo tende, se non si interviene esplicitamente, a diventare disordinato e quindi difficilmente modificabile.
+- Removing duplicated code by abstracting it into a function.
+- Avoiding the use of global variables.
+- Avoiding excessively long methods.
+This process is necessary because, as stated in the Extreme Programming manifesto, the more changes are made to the code, the more it tends, if not explicitly addressed, to become messy and therefore difficult to modify.
 
-Nella fase di manutenzione è stato eseguito, tra le altre cose, il refactoring del codice per migliorare la comprensibilità e la manutenibilità futura del sistema (manutenzione preventiva).
+During the maintenance phase, among other things, code refactoring has been performed to improve the comprehensibility and future maintainability of the system (preventive maintenance).
 
-Nella parte di frontend si è trattato principalmente di convertire funzioni in classi qualora queste fossero responsabili della grafica (non per tutte era stato fatto già da subito), mentre tutte le altre sono state trasformate in metodi, quindi portate all'interno della classe più appropriata. Altre modifiche sono state una generale astrazione, il miglioramento dell'indentazione - specialmente in espressioni JSX molto lunghe - e creazione di file `.module.css` per sezioni specifiche del sito piuttosto che un file `.css` monolitico.
+In the frontend part, the main focus has been on converting functions into classes, especially those responsible for the graphical interface (not all of them were initially implemented this way). All other functions have been transformed into methods and placed within the most appropriate class. Other modifications include general abstraction, improving indentation - especially in lengthy JSX expressions - and creating .module.css files for specific sections of the website rather than a monolithic .css file.
