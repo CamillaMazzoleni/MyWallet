@@ -1,23 +1,20 @@
 # Software Life Cycle
 
-**Per il processo di sviluppo il team ha scelto un approccio di tipo Agile, per avere una risposta più rapida ai cambiameti e per non essere legati ad un  piano da seguire.**
-
-
+**For the development process, the team has chosen an Agile approach to have a faster response to changes and not be tied to a rigid plan.**
 
 ## SCRUM LIFE CYCLE
-Per lo sviluppo del software abbiamo seguito lo **SCRUM** life cycle. Inizialmente, dopo aver definito tutti i requisiti del progetto, abbiamo redatto un **product backlog** con tutte le funzionalità da implementare. Per ogni **sprint** poi abbiamo selezionato alcune di queste (in ordine di priorità) in uno sprint backlog e ci siamo concentrati sull' implementazione e il test di queste. Il team si aggiornava ogni giorno nel **Daily Scrum** e in base alle necessità, ci siamo incontrati per gli **Sprint meetings**. Alla fine di ogni sprint, di circa 4 settimane, il team si è ritrovato per la scrittura dello **sprint review**.
-
+For software development, we followed the **SCRUM** life cycle. Initially, after defining all the project requirements, we created a **product backlog** with all the features to be implemented. For each **sprint**, we then selected some of these features (in order of priority) into a sprint backlog and focused on implementing and testing them. The team had daily updates in the **Daily Scrum** and, as needed, we held **Sprint meetings**. At the end of each sprint, which lasted about 4 weeks, the team gathered for the sprint review.
 
 ![Alt text](assets/agileLifecycleProject.jpg)
 
+## Agile Method
+The guidelines of the Agile method that guided the development of our project are:
+- The **team** and its members are crucial, and harmony and coordination must be preserved. Each member contributes their knowledge to solve real problems.
+- We focus more on implementing sprint features and **programming rather than documentation**. At the end of each sprint, all new features are functional and ready for implementation.
+- The team adapts to **changes** flexibly. If the **client** makes requests during implementation or even after the requirements have been defined, we strive to accommodate them while being mindful of the progress made so far.
 
-## Metodo Aglile
-le linee guida del metodo agile che hanno guidato lo sviluppo del nostro progetto sono:
-- Il **team** e i suoi membri sono molto importanti, bisogna preservare armonia e coordinazione. Ognuno ha delle conoscienze che mette al servizio del team al fine di risolvere problemi reali.
-- Ci concentriamo maggiormente sull' implementazione delle funzionalità sprint e sulla **programmazione piuttosto che sulla documentazione**. Alla fine di ogni sprint tutte le nuove funzionalità sono funzionanti e possono essere implementate.
-- Il team si adatta ai **cambiamenti** in modo flessibile. Se il **cliente** avanzasse delle richieste in fase di implementazione o comunque dopo l’avvenuta stesura dei requisiti, cercheremo di fare in modo di accontentarlo stando in ogni modo attenti a quello che si è sviluppato fino a quel momento.
+## Team Organization
+- Although there is a clear division of tasks, there is no strong specialization. If there is a problem, we try to solve it together, regardless of whether it's related to the backend or frontend.
+- The Scrum Master changes for each sprint. Whoever takes on the role of the Scrum Master acts as a "coach" and helps motivate the team.
+- We use pair programming: for the development of both the frontend and backend, developers have the opportunity to work in pairs. One writes the code while the other acts as a supervisor and reviewer; they can switch roles.
 
-## Organizzazione del team
-- Anche se la divisione dei compiti è netta, non c'è forte specializzazione. Se c'è un problema si cerca di risolverlo insieme, indipendentemente che sia backend/frontend.
-- Lo scrum master cambia per ogni sprint. Chiunque svolga il ruolo di scrum master deve comportarsi come un "coach", deve aiutare e motivare il team.
-- Utilizziamo la tecnica del pair programming: per lo sviluppo dei lati frontend e backend, gli sviluppatori hanno l’opportunità di lavorare in coppia: uno dei due scrive il codice mentre l’altro funge da supervisore e revisore; i due possono cambiarsi di ruolo.
